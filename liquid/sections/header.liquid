@@ -1,0 +1,71 @@
+<header>
+    <div class="header-container">
+        <div class="logo">
+            <a href="/">
+                <img src="{{ 'logo.png' | asset_url }}" alt="AI Measurement Tailor App" />
+            </a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <form action="/search" method="get">
+                <input type="text" name="query" placeholder="Search..." aria-label="Search" />
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</header>
+
+<style>
+    header {
+        background-color: #ffffff;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo img {
+        height: 50px; /* Adjust the logo size */
+    }
+    .main-navigation ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    .main-navigation li {
+        margin-right: 20px;
+    }
+    .main-navigation a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+    }
+    .search-bar {
+        display: flex;
+        align-items: center;
+    }
+    .search-bar input {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    .search-bar button {
+        padding: 8px 12px;
+        margin-left: 5px;
+        border: none;
+        border-radius: 4px;
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+    }
+</style>

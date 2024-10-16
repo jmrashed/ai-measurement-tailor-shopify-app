@@ -1,0 +1,45 @@
+<!-- scripts.liquid -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        // Add your custom JavaScript code here
+
+        // Example: Handle form submission
+        $('#measurementForm').on('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // Collect form data
+            const formData = {
+                name: $('#name').val(),
+                email: $('#email').val(),
+                height: $('#height').val(),
+                weight: $('#weight').val(),
+                chest: $('#chest').val(),
+                waist: $('#waist').val(),
+                hips: $('#hips').val(),
+            };
+
+            // Send the data to the server
+            $.ajax({
+                url: '/submit-measurements', // Adjust the URL as necessary
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify(formData),
+                success: function(response) {
+                    // Handle success (e.g., display a success message)
+                    alert('Measurements submitted successfully!');
+                    $('#measurementForm')[0].reset(); // Reset the form
+                },
+                error: function(xhr, status, error) {
+                    // Handle error (e.g., display an error message)
+                    alert('Error submitting measurements: ' + error);
+                }
+            });
+        });
+    });
+</script>
+
+<style>
+    /* Additional styles for the scripts can be added here */
+</style>

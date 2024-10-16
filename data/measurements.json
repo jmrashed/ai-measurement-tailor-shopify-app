@@ -1,0 +1,50 @@
+{
+    "measurements": [
+      {
+        "id": 1,
+        "userId": 1,
+        "profileName": "John Doe",
+        "height": 180,
+        "weight": 75,
+        "chest": 100,
+        "waist": 85,
+        "hip": 95,
+        "inseam": 80,
+        "sleeveLength": 65,
+        "neck": 40,
+        "createdAt": "2024-10-01T12:00:00Z",
+        "updatedAt": "2024-10-01T12:00:00Z"
+      },
+      {
+        "id": 2,
+        "userId": 2,
+        "profileName": "Jane Smith",
+        "height": 165,
+        "weight": 60,
+        "chest": 90,
+        "waist": 70,
+        "hip": 92,
+        "inseam": 75,
+        "sleeveLength": 60,
+        "neck": 36,
+        "createdAt": "2024-10-02T12:00:00Z",
+        "updatedAt": "2024-10-02T12:00:00Z"
+      },
+      {
+        "id": 3,
+        "userId": 1,
+        "profileName": "John Doe - Summer",
+        "height": 180,
+        "weight": 74,
+        "chest": 99,
+        "waist": 84,
+        "hip": 94,
+        "inseam": 80,
+        "sleeveLength": 64,
+        "neck": 40,
+        "createdAt": "2024-10-10T12:00:00Z",
+        "updatedAt": "2024-10-10T12:00:00Z"
+      }
+    ]
+  }
+  

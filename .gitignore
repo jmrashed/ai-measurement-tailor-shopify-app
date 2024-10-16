@@ -1,0 +1,35 @@
+# Node.js dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Logs
+logs/
+*.log
+
+# dotenv environment variable file
+.env
+
+# MacOS files
+.DS_Store
+
+# IDE specific files
+.idea/
+.vscode/
+
+# Coverage directory used by testing tools
+coverage/
+
+# Temporary files
+temp/
+*.tmp
+
+# Generated files
+*.tgz
+*.zip
+*.tar.gz
+
+shopify.app.toml
+config/shopify.yml

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page_title }}</title>
+    <link rel="stylesheet" href="{{ 'styles.css' | asset_url }}">
+    <script src="{{ 'scripts.js' | asset_url }}" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/measurements">My Measurements</a></li>
+                <li><a href="/profile">Profile</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% if content %}
+            {{ content }}
+        {% else %}
+            <h1>Welcome to the AI Measurement Tailor App</h1>
+            <p>Your one-stop solution for tailored clothing measurements.</p>
+        {% endif %}
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AI Measurement Tailor App. All rights reserved.</p>
+    </footer>
+</body>
+</html>
